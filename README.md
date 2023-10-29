@@ -1,5 +1,5 @@
 # Maskomaly
-Implementation of Ackermann, J., et al. Maskomaly: Zero-shot Anomaly Segmentation. BMVC 2023.
+Implementation of the method presented in: Jan Ackermann, Christos Sakaridis, and Fisher Yu. Maskomaly: Zero-shot Anomaly Segmentation. In BMVC, 2023 (oral).
 
 <img align="center" src="teaser.png">
 
@@ -65,9 +65,9 @@ Here we will skip the process of computing the query indices of the anomaly pred
 
 If you find this useful in your research, please consider citing:
 
-    @article{ackermann2023maskomaly,
+    @inproceedings{ackermann2023maskomaly,
       title={Maskomaly: Zero-Shot Mask Anomaly Segmentation},
       author={Ackermann, Jan and Sakaridis, Christos and Yu, Fisher},
-      journal={BMVC},
+      booktitle={The British Machine Vision Conference (BMVC)},
       year={2023}
     }

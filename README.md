@@ -13,7 +13,9 @@ In this section we describe how to reproduce the exact same results as described
 
 We are aware that we used 'hacky' solutions like changing Detectron2's source code or adding Python path to Mask2Former and are happy to receive contributions!
 
-In case you have problems with replicating the results feel free to reach out! I also have a docker image where you can produce predictions by defining in and output folders! Please find it at the [Docker Registry](https://hub.docker.com/r/ackermannj/maskomaly).
+In case you have problems with replicating the results feel free to reach out! I also have a docker image where you can produce predictions by defining in and output folders! Please find it at the [Docker Registry](https://hub.docker.com/r/ackermannj/maskomaly). You can run it like the following:
+
+    docker run --rm --gpus all --ipc=host --ulimit memlock=-1 --ulimit stack=67108864 -v /.../image_input_path:/input -v /.../output_path:/output ackermannj/maskomaly
 
 ### Mask2Former
 

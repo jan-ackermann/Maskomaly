@@ -17,6 +17,8 @@ In case you have problems with replicating the results feel free to reach out! I
 
     docker run --rm --gpus all --ipc=host --ulimit memlock=-1 --ulimit stack=67108864 -v /.../image_input_path:/input -v /.../output_path:/output ackermannj/maskomaly
 
+Thanks to farhadi76m, we have a [colab demo](https://colab.research.google.com/drive/1_43AnZwWa9-ErhLisLpN7WE00QfnSDkp?usp=sharing) where he could replicate the results. 
+
 ### Mask2Former
 
 First, you will need to install Mask2Former. For that you can follow the instructions of [Mask2Former's Github](https://github.com/facebookresearch/Mask2Former/blob/main/INSTALL.md). But before installing Detectron2, please follow the steps from the next section. Also, you must replace inside the ```mask2former``` repository the ```mask2former/mask2former_model.py``` file with the one provided in this repositories ```mask2former_replacements``` directory.

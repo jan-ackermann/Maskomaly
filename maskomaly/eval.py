@@ -13,7 +13,7 @@ def calculate_auroc(gt, conf):
     roc_auc = auc(fpr, tpr)
     fpr_best = 0
     for i, j, k in zip(tpr, fpr, threshold):
-        if i > 0.9:
+        if i > 0.95:
             fpr_best = j
             break
     return roc_auc, fpr_best, k
